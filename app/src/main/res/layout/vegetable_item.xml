@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/VegetableImg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@color/black"
+            app:civ_border_color="#FF9800"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/vegetableName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Potato"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/VegetableImg"
+            app:layout_constraintTop_toTopOf="@+id/VegetableImg" />
+
+        <TextView
+            android:id="@+id/vegetableQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Quantity: 130 KG"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/vegetableName"
+            app:layout_constraintStart_toStartOf="@+id/vegetableName"
+            app:layout_constraintTop_toBottomOf="@+id/vegetableName" />
+
+        <TextView
+            android:id="@+id/vegetablePrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Price: 3$"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/VegetableImg"
+            app:layout_constraintEnd_toEndOf="@+id/vegetableQuantity"
+            app:layout_constraintStart_toStartOf="@+id/vegetableQuantity"
+            app:layout_constraintTop_toBottomOf="@+id/vegetableQuantity" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
